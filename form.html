@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>
+this is  a form
+</title>
+</head>
+<body>
+
+<form="post">
+ enter your name<input type="text" name="name" id="name" placeholder="please enter your name" minlength="3" maxlength="20"/></br>
+
+enter mobile number:<input type="text" name="number" id="number" placeholder="please enter your mobile number" minlenght="10" maxlength="10"/></br>
+
+enter email address:<input type="email" name="email" id="email" placeholder="please enter your email" minlength="3" maxlength="20"/></br>
+
+ enter pincode:<input type="pincode" name="pincode" id="pincode" placeholder="enter your pincode"/></br>
+
+enter pan number:<input type="text" name="pan" id="pan" placeholder="please enter your pan number" minlength="10" maxlength="10"/></br>
+
+enter aadhar number:<input type="text" name="aadhar" id="aadhar" placeholder="please enter your aadhar number" minlength="12" maxlength="12"/></br>
+
+ enter father name<input type="text" name="father" id="father" placeholder="please enter fathername" minlength="3" maxlength="20"/></br>
+
+ enter date:<input type="date" name="date" id="date"/></br>
+
+<button onclick="abc();" value="submit">send</button></br>
+
+</form>
+
+<script>
+
+
+
+function abc(){
+
+var a=document.getElementById('name').value;
+var b=document.getElementById('number').value;
+var c=document.getElementById('email').value;
+var d=document.getElementById('pincode').value;
+var e=document.getElementById('pan').value;
+var f=document.getElementById('aadhar').value;
+var g=document.getElementById('father').value;
+var h=document.getElementById('date').value;
+
+
+if(a==""){
+alert("please enter name first");
+return false;
+}
+
+if(b==""){
+alert("please enter mobile number");
+return false;
+}
+
+if(c==""){
+alert("please enter email address first");
+return false;
+}
+
+if(d==""){
+alert("please enter your city pincode");
+return false;
+}
+
+if(e==""){
+alert("please enter pan number");
+return false;
+}
+
+if(f==""){
+alert("please enter aadhar");
+return false;
+}
+
+if(g==""){
+alert("please enter father name");
+return false;
+}
+
+if(h==""){
+alert("please enter date as your wish");
+return false;
+}
+
+alert(abc);
+
+
+
+}
+
+
+
+</script>
+
+</body>
+</html>
